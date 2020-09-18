@@ -44,7 +44,7 @@ h2 {
 
 .spb-info {
     margin: 0 0;
-    display: flex;
+    display: -ms-flexbox;
     flex-direction: column;
     justify-content: space-between;
 }
