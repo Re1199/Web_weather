@@ -21,7 +21,7 @@ header {
     border: none;
 }
 
-.main {
+main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 8%;
@@ -30,14 +30,14 @@ header {
 
 h1 {
     margin: 0 0;
-    font-size: 2.6vw;
+    font-size: 40px;
     font-weight: normal;
     font-family: "Times New Roman", serif;
 }
 
 h2 {
     margin: 0 0 8%;
-    font-size: 2.3vw;
+    font-size: 35px;
     font-weight: bold;
     font-family: "Arial", serif;
 }
@@ -50,7 +50,7 @@ h2 {
 }
 
 .spb span {
-    font-size: 7.1vw;
+    font-size: 109px;
     color: #7c7c7c;
     font-family: "Arial", serif;
 }
@@ -76,22 +76,32 @@ h2 {
     color: white;
 }
 
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
 h3 {
     margin: 0 10% 0 0;
-    font-size: 1.9vw;
+    font-size: 29px;
     font-family: "Arial", serif;
 }
 
 p {
     margin: 0 0;
-    font-size: 0.9vw;
+    font-size: 14px;
     font-family: "Arial", serif;
     font-weight: bold
 }
 
 span {
     margin: 0 0;
-    font-size: 0.9vw;
+    font-size: 14px;
     font-family: "Arial", serif;
 }
 
@@ -111,7 +121,7 @@ span {
     margin-right: 3%;
     padding-left: 5%;
     background-color: #f1f1f1;
-    font-size: 0.9vw;
+    font-size: 14px;
     color: #708089;
     border: 0;
 }
@@ -119,7 +129,7 @@ span {
 .plus-btn,
 .cross-btn {
     float: right;
-    width: 11%;
+    width: 9%;
     object-fit: contain;
 }
 
@@ -138,7 +148,22 @@ span {
     width: 12%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+    body {
+        width: 670px;
+    }
+
+    .spb span {
+        font-size: 90px;
+    }
+
+    p,
+    span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 700px) {
     body {
         width: 450px;
     }
@@ -155,12 +180,15 @@ span {
     }
 
     .update-btn {
+        margin-top: 10px;
         display: block;
-        width: 11%;
-        object-fit: contain;
+        width: 50px;
+        height: 43px;
+        background: url("icons/update.png") no-repeat;
+        border: 0;
     }
 
-    .main {
+    main {
         display: grid;
         height: 100px;
         grid-template-columns: 1fr;
@@ -223,7 +251,7 @@ span {
 
     .cross-btn,
     .plus-btn {
-        width: 10%;
+        width: 8%;
         object-fit: contain;
     }
 
