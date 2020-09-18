@@ -221,7 +221,8 @@ span {
         font-size: 2.7vw;
     }
 
-    .cross-btn .plus-btn {
+    .cross-btn,
+    .plus-btn {
         width: 10%;
         object-fit: contain;
     }
